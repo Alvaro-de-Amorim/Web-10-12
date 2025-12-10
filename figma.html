@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Figma</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{      
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: sans-serif;
+        }
+        
+        body{
+            background-image: url(../assets/abstrato-tons-de-azul-imagens-imagem-de-fundo-wallpaper-para-pc-computador-tela-gratis-ambiente-de-trabalho-5.jpg);
+            background-size: cover;
+            padding: 24px;
+            height: 100vh;
+
+        }
+        main{
+            display: flex;
+            flex-direction: row;
+            background-color: #fff;
+            border-radius: 50px;
+            height: 100%;
+        }
+
+        #left-side{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
+            padding: 30px;
+            margin: 10px 10px;
+            background-image: url(../assets/abstrato-tons-de-azul-imagens-imagem-de-fundo-wallpaper-para-pc-computador-tela-gratis-ambiente-de-trabalho-5.jpg);
+            background-size: cover;
+            border-radius: 50px;
+            color: #efe;
+            font-size: small;
+        }
+        header{
+            font-size: large;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            font-family: Quicksand;
+        }
+        #left-side__div{
+            display: flex;
+            flex-direction: column;
+        }
+        h1,
+        h2{
+            font-size: 70px;
+            font-family: Cormorant Unicase;
+            padding: 10px;
+        }
+        #right-side{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+            margin: 30px;
+            border-radius: 50px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            color: #222;
+            align-items: flex-start;
+            gap: 30px;
+            align-items: center;
+        }
+        #right-side__div__h2{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            align-items: center;
+            margin-bottom: 300px;
+        }
+        #right-side__div__input{
+            display: flex;
+            justify-content: space-between;
+        }
+        #right-side__div__label__email{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #right-side__div__label__password{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        hr{
+            border: none;
+            height: 2px;
+            background-color: #efe;
+            width: 160px;
+        }
+        button{
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main>
+            <section id="left-side">
+                <header>
+                    <p>A WISE QUOTE</p>
+                    <hr>
+                </header>
+                <div id="left-side__div">
+                    <h1>Get <br>
+                        Everything <br>
+                        You Want</h1>
+                    <p>You can get everything you want if work hard. <br>
+                        Trust the process, and stick to the plan.
+                    </p>
+                </div>
+            </section>
+            <section id="right-side">
+                <p>Cogie</p>
+                <form action="">
+                    <div id="right-side__div__h2">
+                        <h2>Welcome Back</h2>
+                        <p>Enter your email and password to acess your account</p>
+                    </div>
+                    <div id="right-side__div__label__email">
+                        <label for="enter-email"><strong>Email</strong>
+                            <input type="email" placeholder="Enter your email" id="enter-email">
+                        </label>
+                    </div>
+                    <div id="right-side__div__label__password">
+                        <label for="password" Password><strong>Password</strong>
+                            <input type="password" id="password" placeholder="Enter your password">
+                        </label>
+                    </div>
+                    <div id="right-side__div__input">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me"> Remember-me
+                        </label>
+                        <a href="">Forget Password</a>
+                    </div>
+                    <div>
+                        <button>Sign in</button>
+                        <a href="">Sign in with Google</a>
+                    </div>
+                </form>
+                <p>Don't have an account? <a href=""><strong>Sign up</strong></a></p>
+            </section>
+    </main>
+</body>
+</html>
