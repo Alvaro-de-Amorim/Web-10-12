@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <title>Calculadora</title>
+    <title>10-12</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="vewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <form onsubmit="enviarDados()">
+        <label >Usuarios</label>
+        <input type="text" name="usuario" id="usuario-input">
+
+        <label>Senha</label>
+        <input type="password" name="password" id="password-input">
+
+        <button type="submit">Enviar dados !</button>
+    </form>
+    <!-- <button onclick="enviarDados()">Clique para testar</button> -->
 </body>
+<script>
+    function enviarDados () {
+        event.preventDefault()
+
+        const inputName = document.getElementById("usuario-input");
+        const inputSenha = document.getElementById("password-input");
+
+         if(inputName.value =='admin'&& inputSenha.value=="1234") {
+            alert("USUARIO LOGADO")
+            window.location.href ='https://www.google.com/?hl=pt_BR'
+         }
+        else {
+            alert('USUARIO NEGADO')
+        }
+    }
+    
+    
+</script>
 </html>
