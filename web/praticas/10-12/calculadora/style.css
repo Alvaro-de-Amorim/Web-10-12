@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    background-color: #efefefef;
+    font-family: sans-serif;
+}
+
+body{
+    margin: 100px;
+    border-radius: 50px;
+    background-color: lightpink;
+    border: 2px solid #2f2f2f;
+}
+h1{
+    /* display: flex; */
+    text-align: center;
+    font-size: 75px;
+        background-color: lightpink;
+}
+.number{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;   
+    margin: 177px;
+        background-color: lightpink;
+}
+button{
+    /* background-color: aqua; */
+    font-size: 50px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    gap: 10px;
+}
+input{
+    padding: 30px;
+}

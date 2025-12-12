@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <section class="number">
+        <input type="number" id="primeiroNumero">
+        <input type="number" id="segundoNumero">
+        <section class="button">
+            <button id="btnSoma">Somar</button>
+            <button id="btnSub">Subtrair</button>
+            <button id="btnDiv">Dividir</button>
+            <button id="btnMult">Multiplicar</button>
+        </section>
+    </section>
+</body>
+    
+<script>
+    const inputPrimeiroNumero = document.getElementById("primeiroNumero");
+    const inputSegundoNumero = document.getElementById("segundoNumero");
+      
+    const buttonSoma = document.getElementById("btnSoma");
+    const buttonSub = document.getElementById("btnSub"); 
+    const buttonDiv = document.getElementById("btnDiv");
+    const buttonMult = document.getElementById("btnMult");
+
+    buttonSoma.addEventListener('click', () => {
+        const primeiroNumero = Number(inputPrimeiroNumero.value);
+        const segundoNumero = Number(inputSegundoNumero.value);
+        alert(primeiroNumero+segundoNumero);
+    })
+     buttonSub.addEventListener('click', () => {
+        const primeiroNumero = Number(inputPrimeiroNumero.value);
+        const segundoNumero = Number(inputSegundoNumero.value);
+        alert(primeiroNumero-segundoNumero);
+    })
+     buttonDiv.addEventListener('click', () => {
+        const primeiroNumero = Number(inputPrimeiroNumero.value);
+        const segundoNumero = Number(inputSegundoNumero.value);
+        alert(primeiroNumero/segundoNumero);
+    })
+     buttonMult.addEventListener('click', () => {
+        const primeiroNumero = Number(inputPrimeiroNumero.value);
+        const segundoNumero = Number(inputSegundoNumero.value);
+        alert(primeiroNumero*segundoNumero);
+    })
+</script>
+</html>
